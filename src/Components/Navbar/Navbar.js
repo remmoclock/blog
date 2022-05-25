@@ -25,8 +25,8 @@ function Navbar() {
     <nav>
       {(toggleMenu || screenWidth > 500) && (
         <ul className="list">
-          <li className="items">Home</li>
-          <li className="items">Services</li>
+          <li className="items">Accueil</li>
+          <li className="items">Publier</li>
           <li className="items">Contact</li>
         </ul>
       )}
