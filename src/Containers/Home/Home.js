@@ -1,8 +1,26 @@
+import Card from "../../Components/Card/Card"
+import './Home.css'
+
 function Home() {
   return (
     <>
     <h1 className="home-title">Les articles</h1>
-    <div className="containers-cards">cards</div>
+    <div className="container-cards">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+    </div>
     </>
   )
 }
