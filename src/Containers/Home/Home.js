@@ -1,28 +1,15 @@
-import Card from "../../Components/Card/Card"
-import './Home.css'
+import Card from "../../Components/Card/Card";
+import "./Home.css";
 
 function Home() {
   return (
     <>
-    <h1 className="home-title">Les articles</h1>
-    <div className="container-cards">
+      <h1 className="home-title">Les articles</h1>
+      <div className="container-cards">
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-    </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
