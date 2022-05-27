@@ -21,7 +21,9 @@ function Home() {
     <>
       <h1 className="home-title">Les articles</h1>
       <div className="container-cards">
-        <Card articles={articles}/>
+        {articles.map((article) => {
+          return <Card title={article.title} />;
+        })}
       </div>
     </>
   );
