@@ -5,8 +5,6 @@ function AddArticle() {
   return (
     <>
       <Form />
-      <Form />
-      <Form />
     </>
   )
 }
