@@ -1,10 +1,9 @@
 import Card from "../../Components/Card/Card";
 import "./Home.css";
 import { useDispatch, useSelector } from "react-redux";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { getArticles } from "../../redux/articles/articleReducer";
 import { v4 as uuidv4 } from "uuid";
-
 
 function Home() {
   const { articles } = useSelector((state) => ({
