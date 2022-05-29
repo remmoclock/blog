@@ -1,9 +1,12 @@
 import React from 'react'
+import Form from '../../Components/Form/Form'
 
 function AddArticle() {
   return (
     <>
-      <div>Publier</div>
+      <Form />
+      <Form />
+      <Form />
     </>
   )
 }
