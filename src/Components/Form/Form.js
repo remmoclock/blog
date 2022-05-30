@@ -12,6 +12,15 @@ function Form() {
 
   const handleForm = (e) => {
     e.preventDefault();
+
+    dispatch({
+      type: "ADDARTICLE",
+      payload: article,
+    });
+    setArticle({
+      title: "",
+      body: "",
+    });
   };
 
   const handleInputs = (e) => {
@@ -25,7 +34,7 @@ function Form() {
     }
   };
 
-console.log(article);
+  console.log(article);
 
   return (
     <>
