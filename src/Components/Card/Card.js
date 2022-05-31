@@ -1,14 +1,14 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-function Card({ title }) {
+function Card({ title, body }) {
   return (
     <div className="card">
       <h2>{title}</h2>
       <Link
         to={{
-          pathname: `articles/${title}`,
-          state: { fromDashboard: true },
+          pathname: `articles/${title.replace(/\s+/g, '-').trim()}`,
+          state: { title, body },
         }}
       >
         Lire l'article
