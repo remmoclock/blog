@@ -21,6 +21,9 @@ function Form() {
       title: "",
       body: "",
     });
+
+    alert("Article publier");
+    window.location.href = "/";
   };
 
   const handleInputs = (e) => {
