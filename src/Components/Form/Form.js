@@ -27,8 +27,7 @@ function Form() {
     });
 
     alert("Article publier");
-    // window.location.href = "https://remmoclock.github.io/blog/";
-    navigate("/blog/");
+    navigate("https://remmoclock.github.io/blog/");
   };
 
   const handleInputs = (e) => {
