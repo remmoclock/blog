@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 import "./Form.css";
 
 function Form() {
+  let navigate = useNavigate();
+
   const [article, setArticle] = useState({
     title: "",
     body: "",
@@ -23,7 +27,8 @@ function Form() {
     });
 
     alert("Article publier");
-    window.location.href = "/";
+    // window.location.href = "https://remmoclock.github.io/blog/";
+    navigate("/blog/");
   };
 
   const handleInputs = (e) => {
