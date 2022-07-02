@@ -1,12 +1,13 @@
 const INITIAL_STATE = {
-  articles: [],
+  articles: JSON.parse(localStorage.getItem("article")) || [] ,
 };
-function articleReducer(state = INITIAL_STATE, action) {
 
+function articleReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case "ADDARTICLE":
       const newArr = [...state.articles];
       newArr.unshift(action.payload);
+      localStorage.setItem("article", JSON.stringify(newArr));
       return {
         ...state,
         articles: newArr,

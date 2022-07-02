@@ -8,16 +8,11 @@ function Form() {
     body: "",
   });
 
+  // JSON.parse(localStorage.getItem("article")) ||
+
   // useEffect(() => {
   //   localStorage.setItem("article", JSON.stringify(article));
   // }, [article]);
-
-  // useEffect(() => {
-  //   const items = JSON.parse(localStorage.getItem("article"));
-  //   if (items) {
-  //     setArticle(items);
-  //   }
-  // }, []);
 
   const dispatch = useDispatch();
 
@@ -32,9 +27,6 @@ function Form() {
       title: "",
       body: "",
     });
-
-   
-
   };
 
   const handleInputs = (e) => {
@@ -45,7 +37,6 @@ function Form() {
     } else if (e.target.classList.contains("inp-body")) {
       const newObjState = { ...article, body: e.target.value };
       setArticle(newObjState);
-      localStorage.setItem("article", JSON.stringify(newObjState));
     }
   };
 

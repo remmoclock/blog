@@ -16,6 +16,7 @@ function Home() {
     if (articles.length === 0) {
       dispatch(getArticles());
     }
+    console.log("test",articles);
   }, []);
 
   return (
@@ -23,7 +24,9 @@ function Home() {
       <h1 className="home-title">Les articles</h1>
       <div className="container-cards">
         {articles.map((article) => {
-          return <Card title={article.title} body={article.body} key={uuidv4()} />;
+          return (
+            <Card title={article.title} body={article.body} key={uuidv4()} />
+          );
         })}
       </div>
     </>
