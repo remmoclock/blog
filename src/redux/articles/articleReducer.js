@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-  articles: JSON.parse(localStorage.getItem("article")) || [] ,
+  articles: JSON.parse(localStorage.getItem("article")) || [],
 };
 
 function articleReducer(state = INITIAL_STATE, action) {
@@ -17,7 +17,7 @@ function articleReducer(state = INITIAL_STATE, action) {
         ...state,
         articles: action.payload,
       };
-    };
+    }
   }
   return state;
 }

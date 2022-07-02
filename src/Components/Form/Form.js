@@ -24,7 +24,6 @@ function Form() {
   };
 
   const handleInputs = (e) => {
-    console.log("test change");
     if (e.target.classList.contains("inp-title")) {
       const newObjState = { ...article, title: e.target.value };
       setArticle(newObjState);
@@ -33,8 +32,6 @@ function Form() {
       setArticle(newObjState);
     }
   };
-
-  console.log(article);
 
   return (
     <>

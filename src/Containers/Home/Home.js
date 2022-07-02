@@ -16,7 +16,6 @@ function Home() {
     if (articles.length === 0) {
       dispatch(getArticles());
     }
-    console.log("test",articles);
   }, []);
 
   return (
