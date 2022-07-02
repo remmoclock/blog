@@ -1,6 +1,7 @@
 import "./Article.css";
 import { useLocation } from "react-router-dom";
 
+
 function Article() {
   const location = useLocation();
 

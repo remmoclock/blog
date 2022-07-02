@@ -8,10 +8,7 @@ function Card({ title, body }) {
       <Link
         to={{
           pathname: `articles/${title.replace(/\s+/g, "-").trim()}`,
-          // state: { fromDashboard: true },
-          // state: { title: "title" },
         }}
-        // state="title"
         state={{ title, body }}
       >
         Lire l'article
