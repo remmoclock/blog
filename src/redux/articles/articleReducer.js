@@ -17,7 +17,7 @@ function articleReducer(state = INITIAL_STATE, action) {
         ...state,
         articles: action.payload,
       };
-    }
+    };
   }
   return state;
 }

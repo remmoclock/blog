@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import "./Form.css";
 
@@ -7,12 +7,6 @@ function Form() {
     title: "",
     body: "",
   });
-
-  // JSON.parse(localStorage.getItem("article")) ||
-
-  // useEffect(() => {
-  //   localStorage.setItem("article", JSON.stringify(article));
-  // }, [article]);
 
   const dispatch = useDispatch();
 
